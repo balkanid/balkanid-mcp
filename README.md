@@ -4,11 +4,12 @@
 
 # BalkanID MCP Server
 
-BalkanID's identity governance (IGA) platform, brought to Claude, Cursor, VS Code, ChatGPT, and other
-[MCP](https://modelcontextprotocol.io)-compatible clients — access reviews, entitlements, non-human
-identities (NHI), and requests, directly from your AI assistant. The goal is for everything you can
-do in the BalkanID app to be available over MCP; the tool set is actively growing toward that, so a
-few capabilities may not have an MCP equivalent yet.
+BalkanID's identity governance (IGA) platform for Claude, Cursor, VS Code, ChatGPT, and other
+[MCP](https://modelcontextprotocol.io)-compatible clients. Run access reviews, manage entitlements
+and non-human identities (NHI), and act on requests directly from your AI assistant.
+
+MCP coverage is expanding toward full parity with the app — most capabilities are already here, and
+the rest are on the way.
 
 This repository is a **distribution and reference repo**, not the server implementation. The
 BalkanID MCP Server is a hosted, remote service at `https://mcp.balkanid.app`; there is nothing to
