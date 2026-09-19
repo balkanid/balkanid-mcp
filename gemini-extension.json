@@ -1,0 +1,9 @@
+{
+  "name": "balkanid-mcp-server",
+  "version": "1.0.0",
+  "mcpServers": {
+    "balkanid-mcp-server": {
+      "url": "https://mcp.balkanid.app/server/mcp"
+    }
+  }
+}

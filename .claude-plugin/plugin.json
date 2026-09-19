@@ -1,0 +1,9 @@
+{
+  "name": "balkanid",
+  "displayName": "BalkanID MCP",
+  "description": "Connect to BalkanID to query identity access, entitlements, and non-human identities, and run access reviews and approvals without leaving the conversation.",
+  "author": {
+    "name": "BalkanID"
+  },
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "balkanid": {
+      "type": "http",
+      "url": "https://mcp.balkanid.app/server/mcp"
+    }
+  }
+}

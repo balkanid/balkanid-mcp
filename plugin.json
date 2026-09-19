@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "balkanid",
+  "version": "1.0.0",
+  "description": "Connect AI agents to BalkanID to query identity access, entitlements, non-human identities, and run access reviews.",
+  "author": {
+    "name": "BalkanID",
+    "url": "https://www.balkan.id"
+  },
+  "homepage": "https://docs.balkan.id/balkanid-mcp",
+  "repository": "https://github.com/balkanid/balkanid-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "balkanid",
+    "mcp",
+    "identity",
+    "access-management",
+    "iga",
+    "non-human-identity",
+    "access-reviews"
+  ]
+}

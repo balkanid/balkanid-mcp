@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.balkanid/balkanid-mcp",
+  "description": "Connect Claude, Cursor, VS Code, and other MCP clients to your BalkanID tenant to search, review, and manage identity access, entitlements, and non-human identities.",
+  "repository": {
+    "url": "https://github.com/balkanid/balkanid-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://docs.balkan.id/balkanid-mcp/getting-started-with-mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.balkanid.app/server/mcp"
+    }
+  ]
+}

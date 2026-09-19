@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "balkanid",
+  "description": "BalkanID plugin marketplace for Claude Code",
+  "owner": {
+    "name": "BalkanID",
+    "email": "support@balkan.id"
+  },
+  "plugins": [
+    {
+      "name": "balkanid",
+      "displayName": "BalkanID MCP",
+      "description": "Connect to BalkanID to query identity access, entitlements, and non-human identities, and run access reviews and approvals without leaving the conversation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "BalkanID",
+        "email": "support@balkan.id"
+      },
+      "source": "./",
+      "category": "security",
+      "homepage": "https://github.com/balkanid/balkanid-mcp"
+    }
+  ]
+}
