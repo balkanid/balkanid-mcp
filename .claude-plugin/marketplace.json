@@ -10,7 +10,7 @@
     {
       "name": "balkanid",
       "displayName": "BalkanID MCP",
-      "description": "Connect to BalkanID to query identity access, entitlements, and non-human identities, and run access reviews and approvals without leaving the conversation.",
+      "description": "BalkanID's identity governance (IGA) platform, without leaving the conversation: access reviews, entitlements, non-human identities, and approvals, with more of the app's capabilities landing on MCP over time.",
       "version": "1.0.0",
       "author": {
         "name": "BalkanID",

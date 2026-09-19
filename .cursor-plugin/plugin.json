@@ -1,7 +1,7 @@
 {
   "name": "balkanid",
   "displayName": "BalkanID MCP",
-  "description": "BalkanID plugin for Cursor: query identity access, entitlements, non-human identities, and run access reviews from your editor.",
+  "description": "BalkanID's identity governance (IGA) platform, from your editor: access reviews, entitlements, non-human identities, and requests, with more of the app's capabilities landing on MCP over time.",
   "version": "1.0.0",
   "author": {
     "name": "BalkanID",
