@@ -1,7 +1,7 @@
 {
   "name": "balkanid",
   "displayName": "BalkanID MCP",
-  "description": "BalkanID's identity governance platform, from your editor.",
+  "description": "Identity security and governance for humans, non-humans and AI agents.",
   "version": "1.0.0",
   "author": {
     "name": "BalkanID",

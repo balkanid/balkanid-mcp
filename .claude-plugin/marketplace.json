@@ -10,7 +10,7 @@
     {
       "name": "balkanid",
       "displayName": "BalkanID MCP",
-      "description": "BalkanID's identity governance platform, without leaving the conversation.",
+      "description": "Identity security and governance for humans, non-humans and AI agents.",
       "version": "1.0.0",
       "author": {
         "name": "BalkanID",
