@@ -1,7 +1,7 @@
 {
   "name": "balkanid",
   "displayName": "BalkanID MCP",
-  "description": "BalkanID's identity governance (IGA) platform, without leaving the conversation: run access reviews, manage entitlements and non-human identities, and act on approvals. MCP coverage is expanding toward full parity with the app.",
+  "description": "BalkanID's identity governance platform, without leaving the conversation.",
   "author": {
     "name": "BalkanID"
   },

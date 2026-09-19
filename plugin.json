@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "balkanid",
   "version": "1.0.0",
-  "description": "BalkanID's identity governance (IGA) platform for AI agents: run access reviews, manage entitlements and non-human identities, and act on requests. MCP coverage is expanding toward full parity with the app.",
+  "description": "BalkanID's identity governance platform, available to your AI agent.",
   "author": {
     "name": "BalkanID",
     "url": "https://www.balkan.id"

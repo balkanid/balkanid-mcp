@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "app.balkanid/balkanid-mcp",
-  "description": "BalkanID's identity governance (IGA) platform for MCP clients: run access reviews, manage entitlements and non-human identities, and act on requests from Claude, Cursor, VS Code, and more. MCP coverage is expanding toward full parity with the app.",
+  "description": "BalkanID's identity governance platform, available to your AI assistant.",
   "repository": {
     "url": "https://github.com/balkanid/balkanid-mcp",
     "source": "github"
