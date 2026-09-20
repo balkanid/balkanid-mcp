@@ -1,0 +1,63 @@
+name: Validate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  json:
+    name: Validate JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check JSON syntax
+        run: |
+          set -e
+          for f in $(find . -name '*.json' -not -path './.git/*'); do
+            echo "Checking $f"
+            python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f"
+          done
+
+  yaml:
+    name: Validate YAML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check YAML syntax
+        run: |
+          set -e
+          pip install pyyaml
+          for f in $(find .github -name '*.yml'); do
+            echo "Checking $f"
+            python3 -c "import yaml,sys; yaml.safe_load(open(sys.argv[1]))" "$f"
+          done
+
+  schema:
+    name: Validate server.json against MCP Registry schema
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
+      - name: Validate server.json
+        run: |
+          check-jsonschema --schemafile https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json server.json
+
+  links:
+    name: Check for dead links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --exclude-mail
+            README.md CONTRIBUTING.md SECURITY.md CODE_OF_CONDUCT.md
+          fail: true
