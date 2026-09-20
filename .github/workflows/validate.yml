@@ -58,5 +58,7 @@ jobs:
         with:
           args: >-
             --no-progress
+            --exclude-path .git
+            --exclude 'https://github\.com/.+/(stargazers|contributors|forks)$'
             README.md CONTRIBUTING.md SECURITY.md CODE_OF_CONDUCT.md
           fail: true
