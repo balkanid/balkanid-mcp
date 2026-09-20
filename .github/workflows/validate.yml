@@ -58,6 +58,5 @@ jobs:
         with:
           args: >-
             --no-progress
-            --exclude-mail
             README.md CONTRIBUTING.md SECURITY.md CODE_OF_CONDUCT.md
           fail: true
