@@ -60,5 +60,6 @@ jobs:
             --no-progress
             --exclude-path .git
             --exclude 'https://github\.com/.+/(stargazers|contributors|forks)$'
+            --accept 200,204,301,302,308
             README.md CONTRIBUTING.md SECURITY.md CODE_OF_CONDUCT.md
           fail: true
