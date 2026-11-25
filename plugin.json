@@ -41,6 +41,57 @@
       },
       "publication": {
         "release_notes": "Initial release. Run user access reviews, request and approve access (including just-in-time access through Purposes), discover identities, connections, resources and credentials, and search the BalkanID documentation."
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Confirm the signed-in identity",
+              "prompt": "Who am I signed in as in BalkanID, and what am I allowed to do?",
+              "tools_triggered": "whoami",
+              "expected_behavior": "Shows the signed-in user's email, tenant, BalkanID roles and granted scopes."
+            },
+            {
+              "description": "List access reviews assigned to the user",
+              "prompt": "Show the access reviews waiting on me.",
+              "tools_triggered": "list_campaign_access_reviews",
+              "expected_behavior": "Lists the pending campaign review items assigned to the signed-in user, with the identity and access under review for each."
+            },
+            {
+              "description": "Approve an access review",
+              "prompt": "Approve the first access review waiting on me with the reason \"Still needed for current project\".",
+              "tools_triggered": "list_campaign_access_reviews, approve_reviews",
+              "expected_behavior": "Asks for confirmation, approves one pending review with the given reason and confirms it is no longer pending."
+            },
+            {
+              "description": "Find expired credentials",
+              "prompt": "Which API keys have expired, and who owns them?",
+              "tools_triggered": "list_credentials",
+              "expected_behavior": "Lists expired credentials with their app, name, expiry date and owner, or says the owner is unknown."
+            },
+            {
+              "description": "Request just-in-time access through a purpose",
+              "prompt": "Show the purposes I can request, then request the first one I'm not assigned to.",
+              "tools_triggered": "list_purposes, create_purpose_request",
+              "expected_behavior": "Lists purposes with the user's eligibility, asks for confirmation, creates a purpose request and returns its request ID and pending status."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unrelated question: weather",
+              "prompt": "What's the weather in Bangalore today?"
+            },
+            {
+              "description": "Unrelated task: general coding",
+              "prompt": "Write a Python function that reverses a linked list."
+            },
+            {
+              "description": "Unrelated task: calendar",
+              "prompt": "Book a meeting room for 3pm tomorrow."
+            }
+          ]
+        },
+        "demo_recording_url": ""
       }
     }
   }
