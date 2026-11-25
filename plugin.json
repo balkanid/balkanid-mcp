@@ -18,5 +18,30 @@
     "iga",
     "non-human-identity",
     "access-reviews"
-  ]
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "BalkanID",
+        "shortDescription": "Access reviews and requests",
+        "longDescription": "BalkanID is an identity governance and administration (IGA) platform. This app brings your BalkanID tenant into ChatGPT, so you can see who has access to what, request access and run user access reviews without leaving the conversation.\n\nWith this app you can:\n- Discover identities, connections, resources, credentials and entity relations across your integrated applications\n- Create access requests for employees and agents, and request just-in-time access through JITPBAC Purposes\n- Approve, reject or delegate access requests and campaign reviews assigned to you\n- List access review campaigns and track pending reviews\n- Keep employee records up to date\n- Trigger an integration sync and search the BalkanID documentation\n\nEvery action runs as the signed-in user with their BalkanID roles. Reviewers only see reviews assigned to them, and create or change actions need the Write scope granted at sign-in.",
+        "developerName": "BalkanID",
+        "category": "Productivity",
+        "websiteURL": "https://www.balkan.id/",
+        "supportURL": "https://www.balkan.id/contact",
+        "privacyPolicyURL": "https://docs.balkan.id/terms-and-conditions/privacy-policy",
+        "termsOfServiceURL": "https://docs.balkan.id/terms-and-conditions/terms-of-service",
+        "defaultPrompt": [
+          "Show the access reviews waiting on me",
+          "Which credentials have expired, and who owns them?",
+          "Show access requests waiting for my approval"
+        ],
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png"
+      },
+      "publication": {
+        "release_notes": "Initial release. Run user access reviews, request and approve access (including just-in-time access through Purposes), discover identities, connections, resources and credentials, and search the BalkanID documentation."
+      }
+    }
+  }
 }

@@ -165,6 +165,7 @@ This repository publishes the same MCP server in several package formats so clie
 | Cursor plugin | [`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json) |
 | Gemini extension | [`gemini-extension.json`](gemini-extension.json) |
 | MCP Registry | [`server.json`](server.json) |
+| ChatGPT plugin directory | `extensions."com.openai"` in [`plugin.json`](plugin.json) (listing) and [`mcp.json`](mcp.json) (OAuth) |
 
 Both `mcp.json` and `.mcp.json` are intentional. Agent Plugins requires the root `mcp.json` filename
 and its portable transport vocabulary; existing clients continue to use `.mcp.json` and their native
