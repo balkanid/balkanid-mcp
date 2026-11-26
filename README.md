@@ -79,17 +79,18 @@ Pick your AI client below to connect the BalkanID MCP Server. Each button uses y
       <br><sub>Official listing pending &mdash; see setup guide.</sub>
     </td>
     <td align="center" width="180">
-      <a href="https://docs.balkan.id/balkanid-mcp/installation-and-setup/claude-desktop">
+      <a href="https://claude.ai/directory/balkanid">
         <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Add to Claude"><br>
         <b>Add to Claude</b>
       </a>
-      <br><sub>Official listing pending &mdash; see setup guide.</sub>
+      <br><sub>Connect from the Claude Directory.</sub>
     </td>
   </tr>
 </table>
 
-> The ChatGPT and Claude buttons above link to manual setup guides until the official directory
-> submissions for both are approved. Cursor and VS Code install directly today.
+> The ChatGPT button above links to the manual setup guide until the official directory submission
+> is approved. Claude, Cursor and VS Code install directly today. If your Claude organization doesn't
+> allow directory connectors, add BalkanID as a custom connector instead (see the table below).
 
 ### Let your agent do the setup
 
@@ -107,7 +108,7 @@ Or add the server manually with your client's own command:
 | Client | Command or configuration |
 | --- | --- |
 | Claude Code | `claude mcp add --transport http balkanid https://mcp.balkanid.app/server/mcp`, then run `/mcp` in a session to authenticate |
-| Claude Desktop | **Settings → Connectors → Add custom connector**, then enter the server URL |
+| Claude (claude.ai and Desktop) | Open the [Claude Directory listing](https://claude.ai/directory/balkanid) and connect; organization owners click **Connect for your team**. Or add it yourself: **Settings → Connectors → Add custom connector**, then enter the server URL |
 | VS Code / GitHub Copilot | Command Palette → **MCP: Add Server**, or add to `.vscode/mcp.json` |
 | Cursor | Add to `.cursor/mcp.json`, or install via the [Cursor Marketplace](#one-click-setup) button above |
 | ChatGPT | **Settings → Connectors → Add custom connector** (requires Developer Mode) |
